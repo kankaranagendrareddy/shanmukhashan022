@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Push Docker image') {
             environment {
-                DOCKER_HUB_LOGIN = credentials('mvn')
+                DOCKER_HUB_LOGIN = credentials('docker')
             }
             steps {
                 sh 'docker login --username=$DOCKER_HUB_LOGIN_USR --password=$DOCKER_HUB_LOGIN_PSW'
