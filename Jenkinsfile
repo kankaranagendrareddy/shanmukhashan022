@@ -33,7 +33,7 @@ pipeline {
         stage('Check WebApp Rechability') {
           steps {
           sh 'sleep 10s'
-          sh ' curl http://35.154.49.193:30007'
+          sh 'curl http://13.127.225.44:30007'
           }
         }
         
